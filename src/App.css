@@ -1,0 +1,49 @@
+.heading{
+    margin: 0 auto;
+    font-size:4rem;
+    padding:1rem;
+    Font-weight:bold;
+    color:red;
+    font-family: "Helvetica Neue";
+    display:flex;
+   align-items:center;
+   justify-content: center;
+}
+.container{
+    height:60vh;
+    width:60vh;
+    margin:0 auto;
+    display: grid;
+    grid-template: repeat(3,1fr) / repeat(3,1fr);
+   
+    background-color: grey;
+}
+.container>div{  
+   font-size:4rem;
+   font-weight:bold;
+   color:white;
+   border-top: 1rem solid black ;
+   border-right: 1rem solid black ;
+   display:flex;
+   align-items:center;
+   justify-content: center;
+   cursor: pointer;
+}
+.container>.cell1,.container>.cell2,.container>.cell3{
+    border-top: none;
+}
+.container>.cell3,.container>.cell6,.container>.cell9{
+    border-right: none;
+}
+.restart{
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 1rem;
+    width:70vw;
+    background: green;
+    color: white;
+     display: flex;
+     align-items:center;
+     justify-content:center;
+     border-radius: 10px;
+}
